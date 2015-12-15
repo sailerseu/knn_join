@@ -1,8 +1,8 @@
 # knn_join
-这是knn_join基于Hadoop和Spark实现的java源代码，主要分为两个目录，即Hadoop和Spark，相应的文件夹下就是其对应的源码部分
-Hadoop部分包含有三个部分的源码，即naiveknn,naiveknn_k和ballknn，Spark包含的源码有naiveknn_k和ballknn
-Hadoop的相关源码可以在打包后，通过hadoop jar **** 进行运行
-Spark的执行需要借助于yarn-master
+杩欐槸knn_join鍩轰簬Hadoop鍜孲park瀹炵幇鐨刯ava婧愪唬鐮侊紝涓昏鍒嗕负涓変釜鐩綍锛屽嵆centralized锛孒adoop鍜孲park锛岀浉搴旂殑鏂囦欢澶逛笅灏辨槸鍏跺搴旂殑婧愮爜閮ㄥ垎
+centralizedHadoop閮ㄥ垎鍖呭惈鏈変笁涓儴鍒嗙殑婧愮爜锛屽嵆naiveknn,naiveknn_k鍜宐allknn锛孲park鍖呭惈鐨勬簮鐮佹湁naiveknn_k鍜宐allknn
+Hadoop鐨勭浉鍏虫簮鐮佸彲浠ュ湪鎵撳寘鍚庯紝閫氳繃hadoop jar **** 杩涜杩愯
+Spark鐨勬墽琛岄渶瑕佸�熷姪浜巠arn-master
 spark-submit --class xxx.xxx  --master yarn-cluster ....
 
 
