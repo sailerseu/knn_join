@@ -4,14 +4,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
-
-
-
-
-
-
-
-
 //import org.apache.commons.math3.util.MultidimensionalCounter.Iterator;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;

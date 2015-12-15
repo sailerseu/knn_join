@@ -38,20 +38,6 @@ public class Spark_ball_knn {
 		//JavaRDD<String> lines = sc.textFile("hdfs://master:8020/home/3.txt");
 		JavaRDD<String> t = sc.textFile("hdfs://master:8020/home/twitter.txt");
 		
-		
-		
-		
-		/*JavaRDD<String> lines = sc.textFile("hdfs://223.3.92.151:9000/user/data/test_carytesian_1");
-		ArrayList<String> target=new ArrayList<String>();
-		target.add("9,5,6");
-		target.add("1,1,1");
-		target.add("2,2,2");
-		target.add("3,3,3");
-		target.add("4,4,4");
-		JavaRDD<String> t=sc.parallelize(target);*/
-		
-		
-		
 		JavaPairRDD<String,String> rt=lines.cartesian(t);
 		//JavaPairRDD<String,String> rt=t.cartesian(lines);
 		JavaPairRDD<String,Iterable<String>> rr=rt.mapToPair(new PairFunction<Tuple2<String,String>,String,String>(){
